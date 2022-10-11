@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+}
+.content {
+  width: 800px;
+  background-color: #f8f8f8;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.content .head {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+}
+.content .head > .category {
+  flex: 1;
+}
+.content .head > .count {
+  flex: 1;
+  text-align: right;
+}
+.content .questions_area {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+}
+.content .questions_area > h2 {
+  margin: 0;
+}
+.content .answers_area {
+  background-color: #fff;
+  padding: 20px;
+}
+.content .answers_area > .answer {
+  padding: 10px 0px 20px;
+}
+.content .answers_area > .answer > input[type="radio"] {
+  accent-color: #0075ff;
+}
+.content .answers_area > .answer > input[type="radio"]:checked + label {
+  color: #0075ff;
+}
+.content .answers_area > .answer > label {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+.content .answers_area > .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+.submit-button {
+  width: 100%;
+  border: none;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px;
+  background-color: #0075ff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.bullets {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  border-top: 1px solid #dfdfdf;
+}
+.bullets .spans {
+  flex: 1;
+  display: flex;
+}
+.bullets .spans span {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.bullets .spans span.on {
+  background-color: #0075ff;
+}
